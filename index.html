@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <header>
+
+        <nav>
+            <h1>Hamrah High School</h1>
+        
+            <ul>
+                <li ><a href="#home">Home</a></li> 
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+        
+        <!--video-->
+        <section class="video-container">
+            <video autoplay muted loop>
+                <source src="school-video.mp4" type="video/mp4">
+            </video>
+        </section>
+            
+        <!--welcome text-->
+        <section class="Welcome-text">
+            <h2>Welcome to Hamrah High School!</h2>
+        </section>
+            
+        <!--content-->
+        <section class="content">
+            
+            <!--information-->
+            <div class="info">
+                <h2>Join our School</h2>
+                <p>Hamrah school provides a safe and supportive environment for students in Grades
+                     10, 11, and 12. We believe that a peaceful atmosphere helps students focus
+                    better on their studies and achieve their goals.
+                </p>
+            </div>
+
+                <!--form-->
+            <form class="form-box">
+                <h2>register Now!</h2>
+                <div class="form">
+                    <div class="placeholder">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="placeholder">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Age">
+                    </div>
+                    <div class="placeholder">
+                        <label for="grade">Grade</label>
+                        <select name="grade" id="grade">
+                            <option value="">Select Grade</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </div>
+                    <div class="placeholder">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                    
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hamrah High School - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
