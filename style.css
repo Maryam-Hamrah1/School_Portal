@@ -121,7 +121,7 @@ nav a{
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    gap: 15px;
     width: 100%;
     font-size: 70%;
 }
@@ -152,6 +152,19 @@ button{
    align-items: center;
    font-weight: bold;
 }
+.form-box input, .form-box select, .form-box button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#successMessage{
+    width: 100%;
+    line-height: 35px;
+    text-align: left;
+    padding: 0px;
+}
+
 footer{
     height: 20px;
     text-align: center;
@@ -225,7 +238,7 @@ footer{
         color: antiquewhite;
         display: flex;
         flex-direction: row;
-        height: 35vh;
+        height: 45vh;
         padding: 40px 10px;
         margin: 5px;
         gap: 10%;
@@ -263,7 +276,7 @@ footer{
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    gap: 15px;
     width: 100%;
     font-size: 70%;
     }
@@ -285,6 +298,12 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    }
+
+    .form-box input, .form-box select, .form-box button{
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
     }
 
 button{
@@ -332,7 +351,7 @@ footer{
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    gap: 15px;
     width: 100%;
     font-size: 15px;
     }
@@ -355,13 +374,19 @@ footer{
     flex-direction: column;
     gap: 10px;
     }
-
+  
+    .form-box input, .form-box select, .form-box button{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        
+    }
     button{
-   background-color: #330652;
-   color: aliceblue;
-   font-size: 15px;
-   align-items: center;
-   font-weight: bold;
+       background-color: #330652;
+       color: aliceblue;
+       font-size: 15px;
+       align-items: center;
+       font-weight: bold;
     }
 footer{
     height: 20px;

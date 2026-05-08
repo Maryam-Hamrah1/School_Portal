@@ -1,12 +1,10 @@
 // geting elements from Html
 const form = document.querySelector(".form-box");
+const messageBox = document.getElementById("successMessage")
 const nameInput = document.getElementById("name");
 const ageInput = document.getElementById("age");
 const gradeInput = document.getElementById("grade");
 
-// making a div for runing javascript on it
-const message = document.createElement("p");
-form.appendChild(message);
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -16,8 +14,7 @@ form.addEventListener("submit", function(e){
 
     // making valid
     if( name ==="" || age ==="" || grade ===""){
-        message.textContent = "Please fill all fields!";
-        message.style.color = "red";
+        alert("Please fill all fields!");
         return;
     }
 
@@ -27,27 +24,24 @@ form.addEventListener("submit", function(e){
         age: age,
         grade: grade
     };
- 
-    // welcom message
-    message.textContent = `Welcome ${student.name} to Hamrah high School!`;
-    message.style.color = "black";
- 
-    //summary
-    let summary = document.getElementById("summary");
-    
-    if(!summary) {
-        summary = document.createElement("div");
-        summary.id = "summary";
-        form.appendChild(summary);
-    }
 
-    summary.innerHTML = `
-    <h3>Student Info:</h3>
-    <p>Name: ${student.name}</p>
-    <p>Age: ${student.age}</p>
-    <p>Grade: ${student.grade}</p>
+    //hide form
+    form.style.display = "none";
+
+    //show message instead
+    messageBox.style.display = "block";
+    messageBox.innerHTML = `
+    <h1>🎉 Welcome ${student.name} !</h1>
+    <p>You are successfully enrolled in Hamrah High School.</p>
+
+    <div class="summary">
+       <h3>Your Information: </h3>
+       <p><strong>Name: </strong> ${student.name}</p>
+       <p><strong>Age: </strong> ${student.age}</p>
+       <p><strong>Grade: </strong> ${student.grade}</p>
+    </div>
     `;
-  
+    
     // reset the form
     form.reset();
 })
