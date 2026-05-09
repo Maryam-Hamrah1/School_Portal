@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body id="profile">
+    <header>
+
+        <nav>
+            <h1>Hamrah High School</h1>
+        
+            <ul>
+                <li ><a href="index.html">Home</a></li> 
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+     
+    <!-- MAIN -->
+    <main class="profile-main">
+
+        <!-- PROFILE CARD -->
+        <section class="profile-card">
+             
+            <img src="Maryam_Hamrah_Final-Photoshop_Digital-Painting .jpg" alt="Student">
+            
+            <div class="student-profile">
+                <h2 id="studentName">Maryam Hamrah</h2>
+                
+                <div class="student-info">
+                    <p><strong>Age:</strong> 23</p>
+                    <p><strong>Grade:</strong> 12</p>
+                    <p>
+                        <strong>Status:</strong>
+                        <span id="status">Active</span>
+                    </p>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- CONTACT PANEL -->
+        <section class="contact-panel">
+
+            <h2>Contact Information</h2>
+
+            <div id="contactInfo">
+                <p>Click a button to show information.</p>
+            </div>
+
+            <div class="button-group">
+                <button id="showEmail">Show Email</button>
+
+                <button id="showPhone">Show Phone</button>
+
+                <button id="hideInfo">Hide Contact Info</button>
+            </div>
+
+        </section>
+
+        <!-- STATUS UPDATE -->
+        <section class="status-update">
+
+            <h2>Update Student Status</h2>
+
+            <input type="text" id="statusInput" placeholder="Enter new status">
+
+            <button id="updateBtn"> Update Status</button>
+
+        </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Hamrah High School - 2026</p>
+  </footer>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>

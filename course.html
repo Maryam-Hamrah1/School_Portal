@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Courses</title>
+</head>
+<body class="course">
+
+    <header>
+
+        <nav>
+            <h1>Hamrah High School</h1>
+        
+            <ul>
+                <li ><a href="index.html">Home</a></li> 
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="courses-main">
+
+        <!-- TITLE -->
+        <section class="course-title">
+            <h2>Available Courses</h2>
+        </section>
+
+        <!-- FILTER -->
+        <section class="filter-section">
+
+            <select id="gradeFilter">
+
+                <option value="all">All Grades</option>
+
+                <option value="10">Grade 10</option>
+
+                <option value="11">Grade 11</option>
+
+                <option value="12">Grade 12</option>
+
+            </select>
+
+        </section>
+
+        <!-- COURSES -->
+        <section id="coursesContainer" class="courses-container"> </section>
+
+        <!-- DETAILS PANEL -->
+        <section class="details-panel">
+
+            <h2>Course Details</h2>
+
+            <div id="courseDetails">
+                <p>Select a course to view details.</p>
+            </div>
+
+        </section>
+
+        <!-- ADD COURSE -->
+        <section class="add-course">
+
+            <h2>Add New Course</h2>
+
+            <form id="courseForm">
+
+                <input type="text" id="courseName" placeholder="Course Name">
+
+                <input type="text" id="instructor" placeholder="Instructor Name">
+
+                <select id="courseGrade">
+
+                    <option value="">Select Grade</option>
+
+                    <option value="10">Grade 10</option>
+
+                    <option value="11">Grade 11</option>
+
+                    <option value="12">Grade 12</option>
+
+                </select>
+
+                <textarea id="description" placeholder="Course Description"></textarea>
+
+                <input type="text" id="image" placeholder="Image URL">
+    
+                <button type="submit">Add Course</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+  <footer>
+    <p>Hamrah High School - 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

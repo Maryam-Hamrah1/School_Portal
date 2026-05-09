@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 
+/* Home page*/
 body{
     max-width: 768px;
     width: 100%;
@@ -174,8 +175,337 @@ footer{
     font-size: 10px;
 }
 
-@media (min-width: 768px) {
 
+/* profil*/
+#profile{
+    background-color: #8043a8;
+    justify-content: center;
+}
+
+.profile-main {
+    margin-top: 25px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+/* CARD */
+
+.profile-card {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    background: #e2d8d8;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: normal;
+}
+
+.student-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.student-profile h2{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.student-info{
+    font-size: 12px;
+    line-height: 20px;
+}
+.profile-card img {
+    
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+
+/* CONTACT */
+
+.contact-panel {
+    background: #e2d8d8;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    line-height: 20px;
+}
+
+.contact-panel h2{
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+.contact-panel p{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.button-group button,
+.status-update button {
+    font-size: 14px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    background: #330652;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-group button:hover,
+.status-update button:hover {
+  background: #9d55ce;
+}
+
+/* STATUS UPDATE */
+
+.status-update {
+    background: #e2d8d8;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    line-height: 20px;
+}
+
+.status-update h2{
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.status-update input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+#updateBtn{
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+
+/* course page*/
+.course{
+    background-color: #8043a8;
+}
+.courses-main {
+  padding: 20px;
+}
+
+.course-title{
+    margin-top: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* FILTER */
+
+.filter-section {
+    margin-top: 40px;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.filter-section select {
+    background-color: #330652;
+    border-radius: 8px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* COURSES */
+
+.courses-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.details-panel{
+    height: 200px;
+    line-height: 25px;
+}
+
+.details-panel h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.details-panel p{
+    font-size: 12px;
+}
+
+.course-card {
+  background: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.course-content button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #330652;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.course-content button:hover {
+  background: #d86df3;
+}
+
+/* DETAILS */
+
+.details-panel {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* FORM */
+
+.add-course {
+  margin-top: 30px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+}
+.add-course h2{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#courseForm {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#courseForm input,
+#courseForm select,
+#courseForm textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  border: solid 1px #330652;
+}
+
+#courseForm button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #330652;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* CONTACT PAGE */
+
+.contact-main {
+  padding: 20px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  background: #f4f4f4;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* FORM */
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  font-size: 16px;
+}
+
+#contactForm textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#contactForm button {
+  padding: 12px;
+  border: none;
+  background: #9913ce;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#contactForm button:hover {
+  background: #a00fbd;
+}
+
+/* SUCCESS */
+
+#contactSuccess {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    
+
+    /*Home page*/
     body{
         max-width: 1024px;
         width: 100%;
@@ -306,25 +636,64 @@ footer{
         border: none;
     }
 
-button{
-   background-color: #330652;
-   color: aliceblue;
-   font-size: 15px;
-   align-items: center;
-   font-weight: bold;
+    button{
+        background-color: #330652;
+        color: aliceblue;
+        font-size: 15px;
+        align-items: center;
+        font-weight: bold;
+    }
+    footer{
+        height: 20px;
+        text-align: center;
+        padding: 25px 10px;
+        background-color: #330652;
+        color: antiquewhite;
+        font-size: 20px;
+    }
+
+
+    /* profile*/
+     .profile-main {
+        margin-top: 50px;
+        padding: 30px;
+        gap: 25px;
+    }
+    
+    .profile-card {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    background: #e2d8d8;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: normal;
 }
-footer{
-    height: 20px;
-    text-align: center;
-    padding: 25px 10px;
-    background-color: #330652;
-    color: antiquewhite;
-    font-size: 20px;
+
+    .student-profile h2{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    }
+
+    .student-info{
+    font-size: 15px;
+    line-height: 20px;
 }
 } 
 
+
+
+
+
+
 @media (min-width:1024px) {
     
+
+    /*Home page*/
     body{
         max-width: 1440px;
         width: 100%;
@@ -342,37 +711,38 @@ footer{
         color: antiquewhite;
         display: flex;
         flex-direction: row;
-        height: 50vh;
+        height: 60vh;
         padding: 40px 10px;
         margin: 5px;
         gap: 10%;
     }
-        .form{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    font-size: 15px;
+    
+    .form{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        font-size: 15px;
     }
 
     input::placeholder{
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 5px;
-    width: 100%;
+        border-radius: 2px;
+        font-size: 10px;
+        padding: 5px;
+        width: 100%;
     }
 
     select{
-    color: #867e8b;
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 5px;
+        color: #867e8b;
+        border-radius: 2px;
+        font-size: 10px;
+        padding: 5px;
     }
     .placeholder{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
   
     .form-box input, .form-box select, .form-box button{
@@ -382,19 +752,37 @@ footer{
         
     }
     button{
-       background-color: #330652;
-       color: aliceblue;
-       font-size: 15px;
-       align-items: center;
-       font-weight: bold;
+        background-color: #330652;
+        color: aliceblue;
+        font-size: 15px;
+        align-items: center;
+        font-weight: bold;
     }
-footer{
-    height: 20px;
-    text-align: center;
-    padding: 25px 10px;
-    background-color: #330652;
-    color: antiquewhite;
-    font-size: 20px;
-}
+    footer{
+        height: 20px;
+        text-align: center;
+        padding: 25px 10px;
+        background-color: #330652;
+        color: antiquewhite;
+        font-size: 20px;
+    }
+
+        /* profil*/ 
+    .profile-main {
+        margin-top: 50px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .status-update {
+        background: #e2d8d8;
+        padding: 20px;
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+        line-height: 20px;
+    }
  
 } 
