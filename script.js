@@ -1,133 +1,126 @@
-//Home page
-// geting elements from Html
+
+// index
 const form = document.querySelector(".form-box");
-const messageBox = document.getElementById("successMessage")
+const messageBox = document.getElementById("successMessage");
+const alert = document.getElementById("alertMessage");
 const nameInput = document.getElementById("name");
 const ageInput = document.getElementById("age");
 const gradeInput = document.getElementById("grade");
 
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    const age = ageInput.value.trim();
+    const grade = gradeInput.value;
 
-if(form){
-    form.addEventListener("submit", function(e){
-        e.preventDefault();
-        const name = nameInput.value.trim();
-        const age = ageInput.value.trim();
-        const grade = gradeInput.value;
-
-        // making valid
-        if( name ==="" || age ==="" || grade ===""){
-            alert("Please fill all fields!");
-            return;
-        }
-
-        // object
-        const student = {
-            name: name,
-            age: age,
-            grade: grade
-        };
-
-        //hide form
-        form.style.display = "none";
-
-        //show message instead
-        messageBox.style.display = "block";
-        messageBox.innerHTML = `
-            <h1>🎉 Welcome ${student.name} !</h1>
-            <p>You are successfully enrolled in Hamrah High School.</p>
-
-        <div class="summary">
-            <h3>Your Information: </h3>
-            <p><strong>Name: </strong> ${student.name}</p>
-            <p><strong>Age: </strong> ${student.age}</p>
-            <p><strong>Grade: </strong> ${student.grade}</p>
-        </div>
-        `;
-    
-        // reset the form
-        form.reset();
-    })
-
-}
-
-
-
-// profile
-
-// buttons
-const emailBtn = document.getElementById("showEmail");
-const phoneBtn = document.getElementById("showPhone");
-const hideBtn = document.getElementById("hideInfo");
-
-// contact area
-const contactInfo = document.getElementById("contactInfo");
-
-// status
-const updateBtn = document.getElementById("updateBtn");
-const statusInput = document.getElementById("statusInput");
-const statusText = document.getElementById("status");
-
-// show email
-if(emailBtn && phoneBtn && hideBtn){
-    emailBtn.addEventListener("click", function () {
-
-    contactInfo.innerHTML = `
-        <p>Email: student@hamrahschool.com</p>
-        `;
-
-    });
-
-    // show phone
-    phoneBtn.addEventListener("click", function () {
-
-        contactInfo.innerHTML = `
-        <p>Phone: +93 700 000 000</p>
-        `;
-
-    });
-
-    // hide info
-    hideBtn.addEventListener("click", function () {
-
-        contactInfo.innerHTML = `
-        <p>Contact information hidden.</p>
-        `;
-
-    });
-
-    // update status
-    updateBtn.addEventListener("click", function () {
-
-        const newStatus = statusInput.value.trim();
-
-        if (newStatus === "") {
-        alert("Please enter a status!");
-        return;
+    if (name === "" || age === "" || grade === "") {
+      alert.textContent = "please fill all fields!";
+      return;
     }
 
-    statusText.textContent = newStatus;
+    const student = {
+      name: name,
+      age: age,
+      grade: grade,
+    };
 
-    statusInput.value = "";
+    form.style.display = "none";
+    messageBox.style.display = "block";
 
+    const h1 = document.createElement("h1");
+    h1.textContent = `🎉 Welcome  ${student.name} !`;
+
+    const p = document.createElement("p");
+    p.textContent = "You are successfully enrolled in Hamrah High School.";
+
+    messageBox.appendChild(h1);
+    messageBox.appendChild(p);
+    
+    const div = document.createElement("div")
+    messageBox.appendChild(div)
+
+    const boldName = document.createElement("strong")
+    boldName.textContent= " Name: "
+
+    const boldAge = document.createElement("strong")
+    boldAge.textContent= " Age: "
+
+    const boldGrage = document.createElement("strong")
+    boldGrage.textContent= " Grade: "
+    
+    const p1 = document.createElement("p")
+    const p2 = document.createElement("p")
+    const p3 = document.createElement("p")
+
+    p1.append(boldName, name);
+    p2.append(boldAge, age);
+    p3.append(boldGrage, grade);
+
+    div.appendChild(p1)
+    div.appendChild(p2)
+    div.appendChild(p3)
+
+    form.reset();
+  });
+} 
+
+
+// profile page
+
+const profileCard = document.querySelector(".profile-card")
+
+const emailBtn = document.getElementById("showEmail")
+const phoneBtn = document.getElementById("showPhone")
+const hideBtn = document.getElementById("hideInfo")
+
+const contactInfo = document.getElementById("contactInfo")
+
+const updateBtn = document.getElementById("updateBtn")
+const statusInput = document.getElementById("statusInput")
+const statusText = document.getElementById("status")
+const statusError = document.getElementById("statusError")
+
+if(profileCard){
+    emailBtn.addEventListener("click", function(){
+        contactInfo.textContent = "Email: student@hamrahschool.com"
     });
 
+    phoneBtn.addEventListener("click", function(){
+        contactInfo.textContent = "Phone: +93 700 000 000"
+    });
+
+    hideBtn.addEventListener("click", function(){
+        contactInfo.textContent = ""
+    });
+
+    updateBtn.addEventListener("click", function(){
+        const newStatuse = statusInput.value.trim();
+        
+        if(newStatuse === ""){
+            statusError.textContent = " Please enter a status!"
+            statusError.style.color = "red"
+        };
+        
+        statusText.textContent = newStatuse;
+
+        statusInput.value = " ";
+    });
 }
 
-// course page
-const coursesContainer = document.getElementById("coursesContainer");
 
-if (coursesContainer) {
+// Course page
 
-  // ARRAY OF OBJECTS
+const courseContainer = document.getElementById("coursesContainer");
 
-  const courses = [
-
+if (courseContainer) {
+  const Courses = [
     {
       name: "Mathematics",
       instructor: "Mr. Ahmad",
       grade: "10",
       description: "Learn algebra and geometry.",
-      image: "math.jpg"
+      image: "math.jpg",
     },
 
     {
@@ -135,7 +128,7 @@ if (coursesContainer) {
       instructor: "Ms. Sara",
       grade: "11",
       description: "Study motion and energy.",
-      image: "physics.jpg"
+      image: "physics.jpg",
     },
 
     {
@@ -143,67 +136,46 @@ if (coursesContainer) {
       instructor: "Mr. Karim",
       grade: "12",
       description: "Introduction to programming.",
-      image: "computer.jpg"
-    }
-
+      image: "computer.jpg",
+    },
   ];
 
-  // RENDER FUNCTION
+  function renderCourses(courseList) {
+    courseContainer.innerHTML = "";
 
-    function renderCourses(courseList) {
+    courseList.forEach(function (course) {
+      courseContainer.innerHTML += `
+        <div class="course-card">
 
-       coursesContainer.innerHTML = "";
-
-        courseList.forEach(function(course) {
-
-            coursesContainer.innerHTML += `
-
-            <div class="course-card">
-
-                <img src="${course.image}" alt="${course.name}">
+            <img src="${course.image}" alt="${course.name}">
 
             <div class="course-content">
 
-            <h3>${course.name}</h3>
+                <h1>${course.name}</h1>
+                <p>${course.instructor}</p>
+                <p>${course.grade}</p>
 
-            <p>${course.instructor}</p>
+                <button class="detailsBtn"
+                    data-name="${course.name}"
+                    data-instructor="${course.instructor}"
+                    data-grade = "${course.grade}"
+                    data-description= "${course.description}">
+                    Course Details
+                    </button>
+            </div>
+        </div>
+        `;  
+    });
 
-            <p>Grade ${course.grade}</p>
 
-            <button
-              class="detailsBtn"
 
-              data-name="${course.name}"
+    const detailButtons= document.querySelectorAll(".detailsBtn")
+    const Details = document.getElementById("courseDetails")
 
-              data-instructor="${course.instructor}"
-
-              data-grade="${course.grade}"
-
-              data-description="${course.description}"
-            >
-              View Course Details
-            </button>
-
-          </div>
-
-          </div>
-         `;
-
-        });
-
-       // DATASET
-
-      const detailButtons =
-      document.querySelectorAll(".detailsBtn");
-
-      const details =
-      document.getElementById("courseDetails");
-
-      detailButtons.forEach(function(btn) {
-
-      btn.addEventListener("click", function() {
-
-        details.innerHTML =` 
+    detailButtons.forEach(function (btn){
+        btn.addEventListener("click" , function(){
+            
+            Details.innerHTML=` 
 
           <h3>${this.dataset.name}</h3>
 
@@ -216,178 +188,102 @@ if (coursesContainer) {
           <p>${this.dataset.description}</p>
 
         `;
+        });
+    });
+  }
 
-      });
 
-      });
+  renderCourses(Courses);
 
-    };
 
-  // INITIAL RENDER
+  const gradeFilter = document.getElementById("gradeFilter");
 
-  renderCourses(courses);
-
-  // FILTER
-
-  const gradeFilter =
-    document.getElementById("gradeFilter");
-
-  gradeFilter.addEventListener("change", function() {
-
+  gradeFilter.addEventListener("change", function (){
     const value = this.value;
 
-    if (value === "all") {
-
-      renderCourses(courses);
-
-    } else {
-
-      const filtered =
-        courses.filter(function(course) {
-
-          return course.grade === value;
-
+    if(value === "all") {
+        renderCourses(Courses);
+    } else{
+        const filtered = Courses.filter(function (course){
+            return course.grade === value;
         });
-
-      renderCourses(filtered);
-
-    }
-
+        
+        renderCourses(filtered);
+    };
   });
+   
+  const courseForm = document.getElementById("courseForm");
 
-  // ADD COURSE
-
-  const courseForm =
-    document.getElementById("courseForm");
-
-  courseForm.addEventListener("submit", function(e) {
-
+  courseForm.addEventListener("submit", function(e){
     e.preventDefault();
 
-    const courseName =
-      document.getElementById("courseName").value;
-
-    const instructor =
-      document.getElementById("instructor").value;
-
-    const grade =
-      document.getElementById("courseGrade").value;
-
-    const description =
-      document.getElementById("description").value;
-
-    const image =
-      document.getElementById("image").value;
-
-    // VALIDATION
-
-    if (
-      courseName === "" ||
-      instructor === "" ||
-      grade === "" ||
-      description === "" ||
-      image === ""
-    ) {
-
-      alert("Please fill all fields!");
-
-      return;
-
+    const courseName = document.getElementById("courseName").value;
+    const instructor = document.getElementById("instructor").value;
+    const courseGrade = document.getElementById("courseGrade").value;
+    const description = document.getElementById("description").value;
+    const image = document.getElementById("image").value;
+     
+    const formError = document.querySelector(".formError")
+    if(courseName==="" || instructor==="" || courseGrade==="" || description==="" || image===""){ 
+      formError.textContent = "Please fill all fields!"
+      return;   
     }
-
-    // NEW OBJECT
+    formError.style.display = "none"
 
     const newCourse = {
-
       name: courseName,
       instructor: instructor,
-      grade: grade,
+      grade: courseGrade,
       description: description,
-      image: image
-
+      image: image,
     };
 
-    // PUSH
+    Courses.push(newCourse);
 
-    courses.push(newCourse);
-
-    // RE-RENDER
-
-    renderCourses(courses);
-
-    // RESET
+    renderCourses(Courses);
 
     courseForm.reset();
 
   });
-
 }
 
 
+//Contact page
 
-// CONTACT PAGE
+const contactForm = document.getElementById("contactForm");
 
-const contactForm =
-document.getElementById("contactForm");
+if(contactForm){
+    const contactSuccess = document.getElementById("contactSuccess");
 
-if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-  const contactSuccess =
-    document.getElementById("contactSuccess");
+        const Name = document.getElementById("contactName").value.trim();
+        const Email = document.getElementById("contactEmail").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
 
-  contactForm.addEventListener("submit", function(e) {
 
-    e.preventDefault();
 
-    // GET VALUES
+        const contactError = document.querySelector(".contactError")
+        if(Name ==="" || Email==="" || message===""){
+            contactError.textContent = "Please fill all fields!"
+            return;
+        } 
+        contactError.style.display = "none";
 
-    const name =
-      document.getElementById("contactName")
-      .value.trim();
+        contactSuccess.innerHTML = `
 
-    const email =
-      document.getElementById("contactEmail")
-      .value.trim();
+            <h2>✅ Message Sent Successfully!</h2>
 
-    const message =
-      document.getElementById("contactMessage")
-      .value.trim();
+            <p>
+                Thank you ${Name}, we will contact you soon.
+            </p>
 
-    // VALIDATION
+        `;
 
-    if (
-      name === "" ||
-      email === "" ||
-      message === ""
-    ) {
+        contactForm.style.display = "none";
 
-      alert("Please fill all fields!");
-
-      return;
-
-    }
-
-    // SUCCESS MESSAGE
-
-    contactSuccess.innerHTML = `
-
-      <h2>✅ Message Sent Successfully!</h2>
-
-      <p>
-        Thank you ${name}.
-        We will contact you soon.
-      </p>
-
-    `;
-
-    // HIDE FORM
-
-    contactForm.style.display = "none";
-
-    // RESET FORM
-
-    contactForm.reset();
-
+        contactForm.reset();
   });
 
-}
+};

@@ -6,58 +6,56 @@
 }
 
 /* Home page*/
-body{
-    max-width: 768px;
-    width: 100%;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    line-height: 1.5px;
-    background-color: #330652;
-    
+body {
+  max-width: 768px;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  line-height: 1.5px;
+  background-color: #330652;
 }
 
-nav{
-    position: fixed;
-    top: 0px;
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 15px;
-    height: 20px;
-    background-color: #330652;
-    color: antiquewhite;
+nav {
+  position: fixed;
+  top: 0px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 15px;
+  height: 20px;
+  background-color: #330652;
+  color: antiquewhite;
 }
 
-nav h1{
-    width: 40%;
-    font-size: 10px;
-
+nav h1 {
+  width: 40%;
+  font-size: 10px;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    width: 40%;
-    font-size: 10px;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 40%;
+  font-size: 10px;
 }
-nav a{
-    text-decoration: none;
-    color: antiquewhite;
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
 }
 
-.video-container{
-    position: fixed;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    height: 30vh;
-    overflow: hidden;
-    z-index: -1;
+.video-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .video-container video {
@@ -66,201 +64,200 @@ nav a{
   object-fit: cover;
 }
 
-.Welcome-text{
-    color: antiquewhite;
-    padding: 30px 10px;
-    margin-top: 25vh;
-    height: 70px;
+.Welcome-text {
+  color: antiquewhite;
+  padding: 30px 10px;
+  margin-top: 25vh;
+  height: 70px;
 }
 
-.Welcome-text h2{
-    font-size: 100%;
-    font-weight: bold;
+.Welcome-text h2 {
+  font-size: 100%;
+  font-weight: bold;
 }
 .content {
-    background-color: #8e32cc;
-    border: solid 5px #330652;
-    color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    padding: 20px 10px;
-    margin: 5px;
-    gap: 10%;
+  background-color: #8e32cc;
+  border: solid 5px #330652;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 20px 10px;
+  margin: 5px;
+  gap: 10%;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    line-height: 1.5px;
-    width: 100%;
-    
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.5px;
+  width: 100%;
 }
 
-.info h2{
-    font-size: 100%;
-    font-weight: bold;
+.info h2 {
+  font-size: 100%;
+  font-weight: bold;
 }
-.info p{
-    font-size: 80%;
-    line-height: 20px;
-}
-
-.form-box{
-    display: flex;
-    flex-direction: column;
-    gap: 20%;
-    width: 100%;
-}
-.form-box h2{
-    width: 100%;
-    font-size: 100%;
-    font-weight: bold;
-}
-.form{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    font-size: 70%;
+.info p {
+  font-size: 80%;
+  line-height: 20px;
 }
 
-input::placeholder{
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 5px;
-    width: 100%;
+#alertMessage{
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-select{
-    color: #867e8b;
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 5px;
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
 }
-.placeholder{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.form-box h2 {
+  width: 100%;
+  font-size: 100%;
+  font-weight: bold;
 }
-
-button{
-   background-color: #330652;
-   color: aliceblue;
-   font-size: 15px;
-   align-items: center;
-   font-weight: bold;
-}
-.form-box input, .form-box select, .form-box button{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
+.form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  font-size: 70%;
 }
 
-#successMessage{
-    width: 100%;
-    line-height: 35px;
-    text-align: left;
-    padding: 0px;
+input::placeholder {
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 5px;
+  width: 100%;
 }
 
-footer{
-    height: 20px;
-    text-align: center;
-    padding: 25px 10px;
-    background-color: #330652;
-    color: antiquewhite;
-    font-size: 10px;
+select {
+  color: #867e8b;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 5px;
+}
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
+button {
+  background-color: #330652;
+  color: aliceblue;
+  font-size: 15px;
+  align-items: center;
+  font-weight: bold;
+}
+.form-box input,
+.form-box select,
+.form-box button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+#successMessage {
+  width: 100%;
+  line-height: 35px;
+  text-align: left;
+  padding: 0px;
+}
+
+footer {
+  height: 20px;
+  text-align: center;
+  padding: 25px 10px;
+  background-color: #330652;
+  color: antiquewhite;
+  font-size: 10px;
+}
 
 /* profil*/
-#profile{
-    background-color: #8043a8;
-    justify-content: center;
+#profile {
+  background-color: #8043a8;
+  justify-content: center;
 }
 
 .profile-main {
-    margin-top: 25px;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+  margin-top: 25px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
 }
-
-
 
 .profile-card {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    background: #e2d8d8;
-    padding: 20px;
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
-    text-align: left;
-    line-height: normal;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  background: #e2d8d8;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  text-align: left;
+  line-height: normal;
 }
 
-.student-profile{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.student-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.student-profile h2{
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
+.student-profile h2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.student-info{
-    font-size: 12px;
-    line-height: 20px;
+.student-info {
+  font-size: 12px;
+  line-height: 20px;
 }
 .profile-card img {
-    
-    width: 105px;
-    height: 105px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-
 /* course page*/
-.course{
-    background-color: #8043a8;
+.course {
+  background-color: #8043a8;
 }
 .courses-main {
   padding: 20px;
 }
 
-.course-title{
-    margin-top: 50px;
-    text-align: center;
-    color: aliceblue;
+.course-title {
+  margin-top: 50px;
+  text-align: center;
+  color: aliceblue;
 }
 
-
 .filter-section {
-    margin-top: 40px;
-    text-align: right;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  margin-top: 40px;
+  text-align: right;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .filter-section select {
-    font-size: 14px;
-    background-color: #330652;
-    border-radius: 8px;
-    color: aliceblue;
-    padding: 10px;
+  font-size: 14px;
+  background-color: #330652;
+  border-radius: 8px;
+  color: aliceblue;
+  padding: 10px;
 }
-
 
 .courses-container {
   display: grid;
@@ -268,22 +265,22 @@ footer{
   gap: 20px;
 }
 
-.details-panel{
-    margin-top: 20px;
-    padding: 15px;
-    background: #f4f4f4;
-    border-radius: 12px;
-    overflow: hidden;
-    height: 150px;
-    line-height: 25px;
+.details-panel {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 150px;
+  line-height: 25px;
 }
 
-.details-panel h2{
-    font-size: 18px;
-    font-weight: bold;
+.details-panel h2 {
+  font-size: 18px;
+  font-weight: bold;
 }
-.details-panel p{
-    font-size: 12px;
+.details-panel p {
+  font-size: 12px;
 }
 
 .course-card {
@@ -319,37 +316,39 @@ footer{
   background: #8043a8;
 }
 
-
 .add-course {
   margin-top: 30px;
   background: #f4f4f4;
   padding: 20px;
   border-radius: 12px;
 }
-.add-course h2{
-    margin-top: 20px;
-    font-size: 18px;
+.add-course h2 {
+  margin-top: 20px;
+  font-size: 18px;
 }
 
+.formError{
+  color: red;
+}
 #courseForm {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #courseForm input,
 #courseForm select,
 #courseForm textarea {
-    height: 40px;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    border: solid 2px #330652;
+  height: 40px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  border: solid 2px #330652;
 }
 
 #courseForm textarea {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 #courseForm button {
@@ -362,8 +361,6 @@ footer{
   font-size: 16px;
 }
 
-
-
 /* CONTACT PAGE */
 
 .contact-main {
@@ -372,29 +369,32 @@ footer{
 }
 
 .contact-title {
-    margin-top: 40px;
-    text-align: center;
-    line-height: 20px;
-    margin-bottom: 30px;
-    color: aliceblue;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: aliceblue;
 }
 
-.contact-title h2{
-    margin-bottom: 20px;
-    font-size: 25px;
+.contact-title h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
-.contact-title p{
-    font-size: 16px;
+.contact-title p {
+  font-size: 16px;
 }
 
 .contact-section {
-    margin-top: 40px;
+  margin-top: 40px;
   background: #f4f4f4;
   padding: 25px;
   border-radius: 12px;
 }
 
+.contactError{
+  color: red;
+}
 
 #contactForm {
   display: flex;
@@ -404,8 +404,8 @@ footer{
 
 #contactForm input,
 #contactForm textarea {
-    border: solid 2px #330652;
-    border-radius: 8px;
+  border: solid 2px #330652;
+  border-radius: 8px;
   padding: 12px;
   font-size: 16px;
 }
@@ -418,7 +418,7 @@ footer{
 #contactForm button {
   padding: 12px;
   border: none;
-  background: #330652;;
+  background: #330652;
   color: white;
   cursor: pointer;
   border-radius: 8px;
@@ -428,53 +428,49 @@ footer{
   background: #8043a8;
 }
 
-
-
 #contactSuccess {
-    font-size: 12px;
+  font-size: 12px;
   margin-top: 20px;
   text-align: center;
   line-height: 40px;
 }
 
-
-
 .contact-panel {
-    background: #e2d8d8;
-    padding: 20px;
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
-    line-height: 20px;
+  background: #e2d8d8;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  line-height: 20px;
 }
 
-.contact-panel h2{
-    font-size: 20px;
-    font-weight: bold;  
+.contact-panel h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.contact-panel p{
-    font-size: 12px;
-    margin-top: 8px;
+.contact-panel p {
+  font-size: 12px;
+  margin-top: 8px;
 }
 
 .button-group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
 }
 
 .button-group button,
 .status-update button {
-    font-size: 14px;
-    height: 25px;
-    padding: 5px;
-    border: none;
-    background: #330652;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
+  font-size: 14px;
+  height: 25px;
+  padding: 5px;
+  border: none;
+  background: #330652;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .button-group button:hover,
@@ -482,19 +478,18 @@ footer{
   background: #9d55ce;
 }
 
-
 .status-update {
-    background: #e2d8d8;
-    padding: 20px;
-    width: 100%;
-    height: 150px;
-    border-radius: 12px;
-    line-height: 20px;
+  background: #e2d8d8;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  line-height: 20px;
 }
 
-.status-update h2{
-    font-size: 20px;
-    font-weight: bold; 
+.status-update h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .status-update input {
@@ -505,184 +500,180 @@ footer{
   border-radius: 8px;
 }
 
-#updateBtn{
-    font-size: 14px;
-    padding: 5px;
-    width: 100%;
+#updateBtn {
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
-    
+  /*Home page*/
+  body {
+    max-width: 1024px;
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    line-height: 1.5px;
+    background-color: #330652;
+  }
 
-    /*Home page*/
-    body{
-        max-width: 1024px;
-        width: 100%;
-        justify-content: center;
-        text-align: left;
-        align-items: center;
-        line-height: 1.5px;
-        background-color: #330652;
-    }
+  nav {
+    position: fixed;
+    top: 0px;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+    height: 60px;
+    background-color: #330652;
+    color: antiquewhite;
+  }
+  nav h1 {
+    width: 100%;
+    font-size: 25px;
+  }
 
-    nav{
-        position: fixed;
-        top: 0px;
-        justify-content: left;
-        text-align: left;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 30px 10px;
-        height: 60px;
-        background-color: #330652;
-        color: antiquewhite;
-    }
-    nav h1{
-        width: 100%;
-        font-size: 25px;
-    }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    font-size: 20px;
+  }
+  .video-container {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: -1;
+  }
 
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;
-        font-size: 20px;
-    }
-    .video-container{
-        position: fixed;
-        top: 20px;
-        left: 0;
-        width: 100%;
-        height: 60vh;
-        overflow: hidden;
-        z-index: -1;
-    }
-    
-    .Welcome-text{
-        color: antiquewhite;
-        padding: 30px 10px;
-        margin-top: 50vh;
-        height: 70px;
-        font-size: 40px;
-    }
-    
-    .content {
-        background-color: #8e32cc;
-        border: solid 5px #330652;
-        color: antiquewhite;
-        display: flex;
-        flex-direction: row;
-        height: 30vh;
-        padding: 40px 10px;
-        margin: 5px;
-        gap: 10%;
-    }
+  .Welcome-text {
+    color: antiquewhite;
+    padding: 30px 10px;
+    margin-top: 50vh;
+    height: 70px;
+    font-size: 40px;
+  }
 
-   .info{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        width: 100%;
-    }
+  .content {
+    background-color: #8e32cc;
+    border: solid 5px #330652;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    padding: 40px 10px;
+    margin: 5px;
+    gap: 10%;
+  }
 
-    .info h2{
-        font-size: 30px;
-        font-weight: bold;
-    }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+  }
 
-    .info p{
-        font-size: 18px;
-        line-height: 35px;
-    }
-    .form-box{
-        display: flex;
-        flex-direction: column;
-        gap: 65px;
-        width: 100%;
-    }
-    .form-box h2{
-        display: inline;
-        font-size: 30px;
-        font-weight: bold;
+  .info h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
 
-    }
-    .form{
+  .info p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+  .form-box h2 {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #alertMessage{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: red;
+  }
+
+  .form {
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     font-size: 70%;
-    }
+  }
 
-    input::placeholder{
+  input::placeholder {
     border-radius: 2px;
     font-size: 15px;
     padding: 5px;
     width: 100%;
-    }
+  }
 
-    select{
+  select {
     color: #867e8b;
     border-radius: 2px;
     font-size: 10px;
     padding: 5px;
-    }
-    .placeholder{
-        font-size: 18px;
+  }
+  .placeholder {
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    }
+  }
 
-    .form-box input, .form-box select, .form-box button{
-        padding: 8px;
-        border-radius: 5px;
-        border: none;
-    }
+  .form-box input,
+  .form-box select,
+  .form-box button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
 
-    button{
-        background-color: #330652;
-        color: aliceblue;
-        font-size: 15px;
-        align-items: center;
-        font-weight: bold;
-    }
-    footer{
-        height: 20px;
-        text-align: center;
-        padding: 25px 10px;
-        background-color: #330652;
-        color: antiquewhite;
-        font-size: 20px;
-    }
+  button {
+    background-color: #330652;
+    color: aliceblue;
+    font-size: 15px;
+    align-items: center;
+    font-weight: bold;
+  }
+  footer {
+    height: 20px;
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #330652;
+    color: antiquewhite;
+    font-size: 20px;
+  }
 
+  /* profile*/
+  .profile-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding: 30px;
+    justify-content: space-between;
+  }
 
-    /* profile*/
-     .profile-main {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 70px;
-        padding: 30px;
-        justify-content: space-between;
-    }
-    
-    .profile-card {
+  .profile-card {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -694,104 +685,100 @@ footer{
     border-radius: 12px;
     text-align: left;
     line-height: normal;
-    }
+  }
 
-    .student-profile h2{
+  .student-profile h2 {
     width: 100%;
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bold;
-    }
+  }
 
-    .student-info{
-        font-size: 15px;
-        line-height: 30px;
-    }
-     
-    .contact-panel{
-        width: 230px;
-        height: 350px;
-        
-    }
+  .student-info {
+    font-size: 15px;
+    line-height: 30px;
+  }
 
-    .contact-panel h2{
+  .contact-panel {
+    width: 230px;
+    height: 350px;
+  }
+
+  .contact-panel h2 {
     width: 100%;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
-    }
+  }
 
-    .button-group{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  .button-group {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .button-group button{
-        height: 40px;
-    }
+  .button-group button {
+    height: 40px;
+  }
 
-    #contactInfo{
-        margin-top: 30px;
-    }
+  #contactInfo {
+    margin-top: 30px;
+  }
 
-    #contactInfo p{
-        font-size: 10px;
-        font-weight: bold;
-    }
+  #contactInfo p {
+    font-size: 10px;
+    font-weight: bold;
+  }
 
-    .status-update{
-        width: 230px;
-        height: 350px;
-        
-    }
-    
-    .status-update h2{
-        font-size: 25px;
-        line-height: 35px;
-        margin-bottom: 20px;
-    }
+  .status-update {
+    width: 230px;
+    height: 350px;
+  }
 
-    .status-update input,
-    .status-update button{
-        height: 40px;
-    }
+  .status-update h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
 
+  .status-update input,
+  .status-update button {
+    height: 40px;
+  }
 
+  /* page Course*/
+  .courses-main {
+    margin-top: 70px;
+  }
+  .course-title h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
 
-    /* page Course*/
-    .courses-main{
-        margin-top: 70px;
-    }
-    .course-title h2{
-        font-size: 40px;
-        margin-bottom: 70px;
-    }
-     
-    .filter-section select{
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .course-content {
-     padding: 14px;
+  .filter-section select {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .course-content {
+    padding: 14px;
     line-height: 30px;
     font-size: 20px;
-    }
+  }
 
-    .course-content button {
-     margin-top: 10px;
-     padding: 10px;
-     border: none;
-     background: #330652;
-     color: white;
-     cursor: pointer;
-     border-radius: 8px;
-     font-size: 18px;
-    }
+  .course-content button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #330652;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+  }
 
-    .details-panel{
+  .details-panel {
     margin-top: 20px;
     padding: 15px;
     background: #f4f4f4;
@@ -799,76 +786,65 @@ footer{
     overflow: hidden;
     height: 200px;
     line-height: 30px;
-    }
+  }
 
-    .details-panel h2{
+  .details-panel h2 {
     font-size: 24px;
     font-weight: bold;
-    }
-    .details-panel p{
+  }
+  .details-panel p {
     font-size: 18px;
-    }
-    
-    .add-course h2{
+  }
+
+  .add-course h2 {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-     }
+  }
 
-     #courseForm button {
-      font-size: 24px;
-    }
-     #courseForm input,
-     #courseForm select,
-     #courseForm textarea {
-        height: 60px;
-     }
+  #courseForm button {
+    font-size: 24px;
+  }
+  #courseForm input,
+  #courseForm select,
+  #courseForm textarea {
+    height: 60px;
+  }
 
+  /* contact page*/
 
+  .contact-main {
+    margin-top: 70px;
+  }
+  .contact-title h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
 
-     /* contact page*/
-
-     .contact-main{
-        margin-top: 70px;
-     }
-     .contact-title h2{
-        font-size: 35px;
-        margin-bottom: 30px;
-
-     }
-    
-    .contact-title p{
-        font-size: 20px;
-    }
-    #contactSuccess {
+  .contact-title p {
+    font-size: 20px;
+  }
+  #contactSuccess {
     font-size: 20px;
     margin-top: 20px;
     text-align: center;
     line-height: 50px;
+  }
 }
 
-} 
+@media (min-width: 1024px) {
+  /*Home page*/
+  body {
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    line-height: 1.5px;
+    background-color: #330652;
+  }
 
-
-
-
-
-
-@media (min-width:1024px) {
-    
-
-    /*Home page*/
-    body{
-        max-width: 1440px;
-        width: 100%;
-        justify-content: center;
-        text-align: left;
-        align-items: center;
-        line-height: 1.5px;
-        background-color: #330652;
-    }
-
-    .video-container{
+  .video-container {
     position: fixed;
     top: 20px;
     left: 0;
@@ -876,200 +852,198 @@ footer{
     height: 80vh;
     overflow: hidden;
     z-index: -1;
-    }
-    
-    .Welcome-text h2{
-        margin-top: 20vh;
-    }
-    
-    .content {
-        background-color: #8e32cc;
-        border: solid 5px #330652;
-        color: antiquewhite;
-        display: flex;
-        flex-direction: row;
-        height: 60vh;
-        padding: 40px 10px;
-        margin-top: 25vh;
-        gap: 10%;
-    }
-    
-    .form{
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        font-size: 15px;
-    }
+  }
 
-    input::placeholder{
-        border-radius: 2px;
-        font-size: 10px;
-        padding: 5px;
-        width: 100%;
-    }
+  .Welcome-text h2 {
+    margin-top: 20vh;
+  }
 
-    select{
-        color: #867e8b;
-        border-radius: 2px;
-        font-size: 10px;
-        padding: 5px;
-    }
-    .placeholder{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-  
-    .form-box input, .form-box select, .form-box button{
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        
-    }
-    button{
-        background-color: #330652;
-        color: aliceblue;
-        font-size: 15px;
-        align-items: center;
-        font-weight: bold;
-    }
-    footer{
-        height: 20px;
-        text-align: center;
-        padding: 25px 10px;
-        background-color: #330652;
-        color: antiquewhite;
-        font-size: 20px;
-    }
+  .content {
+    background-color: #8e32cc;
+    border: solid 5px #330652;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    padding: 40px 10px;
+    margin-top: 25vh;
+    gap: 10%;
+  }
 
-        /* profil*/ 
-    .profile-main {
-        margin-top: 50px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-    }
+  .form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-size: 15px;
+  }
 
-    .status-update {
-        background: #e2d8d8;
-        padding: 20px;
-        width: 100%;
-        height: 200px;
-        border-radius: 12px;
-        line-height: 20px;
-    }
- 
+  input::placeholder {
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 5px;
+    width: 100%;
+  }
 
-    /*profile page*/
+  select {
+    color: #867e8b;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .profile-main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        margin-top: 80px;
-        margin-bottom: 20px;
-    }
-    .profile-card{
-        width: 400px;
-        height: 430px;
+  .form-box input,
+  .form-box select,
+  .form-box button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  button {
+    background-color: #330652;
+    color: aliceblue;
+    font-size: 15px;
+    align-items: center;
+    font-weight: bold;
+  }
+  footer {
+    height: 20px;
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #330652;
+    color: antiquewhite;
+    font-size: 20px;
+  }
 
-    }
+  /* profil*/
+  .profile-main {
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
 
-    .profile-card img{
-        width: 230px;
-        height: 230px;
-    }
+  .status-update {
+    background: #e2d8d8;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    line-height: 20px;
+  }
 
-    .contact-panel{
-        width: 400px;
-        height: 430px;
-    }
-     
-   .contact-panel #contactInfo p{
+  /*profile page*/
+
+  .profile-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .profile-card {
+    width: 400px;
+    height: 430px;
+  }
+
+  .profile-card img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .contact-panel {
+    width: 400px;
+    height: 430px;
+  }
+
+  .contact-panel #contactInfo p {
     margin-top: 40px;
     font-size: 20px;
-   }
-    .status-update{
-        width: 400px;
-        height: 430px;
-    }
+  }
+  .status-update {
+    width: 400px;
+    height: 430px;
+  }
 
-    .student-profile h2{
+  .student-profile h2 {
     width: 100%;
     font-size: 30px;
     font-weight: bold;
-    }
+  }
 
-    .student-info{
+  .student-info {
     font-size: 14px;
     line-height: 20px;
-    }
+  }
 
-    .contact-panel h2{
-        margin-top: 20px;
+  .contact-panel h2 {
+    margin-top: 20px;
     width: 100%;
     margin-bottom: 10px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    }
+  }
 
-    .button-group{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+  .button-group {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-    .button-group button{
-        height: 40px;
-    }
+  .button-group button {
+    height: 40px;
+  }
 
-    #contactInfo{
-        margin-top: 30px;
-    }
+  #contactInfo {
+    margin-top: 30px;
+  }
 
-    #contactInfo p{
-        font-size: 10px;
-        font-weight: bold;
-    }
+  #contactInfo p {
+    font-size: 10px;
+    font-weight: bold;
+  }
 
+  /*course page*/
+  .courses-main {
+    margin-top: 70px;
+  }
+  .course-title h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
 
-    /*course page*/
-    .courses-main{
-        margin-top: 70px;
-    }
-    .course-title h2{
-        font-size: 40px;
-        margin-bottom: 70px;
-    }
-     
-    .filter-section select{
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .course-content {
-     padding: 14px;
+  .filter-section select {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .course-content {
+    padding: 14px;
     line-height: 30px;
     font-size: 20px;
-    }
+  }
 
-    .course-content button {
-     margin-top: 10px;
-     padding: 10px;
-     border: none;
-     background: #330652;
-     color: white;
-     cursor: pointer;
-     border-radius: 8px;
-     font-size: 18px;
-    }
+  .course-content button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #330652;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+  }
 
-    .details-panel{
+  .details-panel {
     margin-top: 20px;
     padding: 15px;
     background: #f4f4f4;
@@ -1077,47 +1051,38 @@ footer{
     overflow: hidden;
     height: 200px;
     line-height: 30px;
-    }
+  }
 
-    .details-panel h2{
+  .details-panel h2 {
     font-size: 24px;
     font-weight: bold;
-    }
-    .details-panel p{
+  }
+  .details-panel p {
     font-size: 18px;
-    }
-    
-    .add-course h2{
+  }
+
+  .add-course h2 {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-     }
+  }
 
-     #courseForm button {
-      font-size: 24px;
-    }
-     #courseForm input,
-     #courseForm select,
-     #courseForm textarea {
-        height: 60px;
-     }
+  #courseForm button {
+    font-size: 24px;
+  }
+  #courseForm input,
+  #courseForm select,
+  #courseForm textarea {
+    height: 60px;
+  }
 
+  /* contact page*/
 
-
-     /* contact page*/
-
-    .courses-container {
+  .courses-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-     }
-}
-
-
-    
-
-
-
-
+  }
 
  
+}

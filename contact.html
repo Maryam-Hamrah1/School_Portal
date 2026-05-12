@@ -1,91 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>contact</title>
-</head>
-<body class="contact">
-     <header>
+  </head>
+  <body class="contact">
+    <header>
+      <nav>
+        <h1>Hamrah High School</h1>
 
-        <nav>
-            <h1>Hamrah High School</h1>
-        
-            <ul>
-                <li ><a href="index.html">Home</a></li> 
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-
-        </nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-     <!-- MAIN -->
+    <!-- MAIN -->
 
-  <main class="contact-main">
+    <main class="contact-main">
+      <!-- TITLE -->
 
-    <!-- TITLE -->
+      <section class="contact-title">
+        <h2>Contact Us</h2>
 
-    <section class="contact-title">
+        <p>
+          Send us a message if you have questions about enrollment or courses.
+        </p>
+      </section>
 
-      <h2>Contact Us</h2>
+      <!-- CONTACT FORM -->
 
-      <p>
-        Send us a message if you have questions
-        about enrollment or courses.
-      </p>
+      <section class="contact-section">
+        <form id="contactForm">
+          <p class="contactError"></p>
+          <input type="text" id="contactName" placeholder="Your Name" />
 
-    </section>
+          <input type="email" id="contactEmail" placeholder="Your Email" />
 
-    <!-- CONTACT FORM -->
+          <textarea id="contactMessage" placeholder="Your Message"></textarea>
 
-    <section class="contact-section">
+          <button type="submit">Send Message</button>
+        </form>
 
-      <form id="contactForm">
+        <!-- SUCCESS MESSAGE -->
 
-        <input
-          type="text"
-          id="contactName"
-          placeholder="Your Name"
-        >
+        <div id="contactSuccess"></div>
+      </section>
+    </main>
 
-        <input
-          type="email"
-          id="contactEmail"
-          placeholder="Your Email"
-        >
+    <!-- FOOTER -->
 
-        <textarea
-          id="contactMessage"
-          placeholder="Your Message"
-        ></textarea>
+    <footer>
+      <p>Hamrah High School - 2026</p>
+    </footer>
 
-        <button type="submit">
-          Send Message
-        </button>
-
-      </form>
-
-      <!-- SUCCESS MESSAGE -->
-
-      <div id="contactSuccess"></div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <p>Hamrah High School - 2026</p>
-
-  </footer>
-
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
